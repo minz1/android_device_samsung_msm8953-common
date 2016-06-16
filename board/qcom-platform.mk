@@ -1,0 +1,12 @@
+# Malloc implementation
+MALLOC_SVELTE := true
+
+# QCom hardware
+BOARD_USES_QCOM_HARDWARE := true
+BOARD_USES_QC_TIME_SERVICES := true
+TARGET_USES_NEW_ION_API := true
+
+# Power HAL
+CM_POWERHAL_EXTENSION := qcom
+TARGET_POWERHAL_VARIANT := qcom
+WITH_QC_PERF := true

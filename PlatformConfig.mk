@@ -1,4 +1,4 @@
-# Architecture
+# Platform
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
@@ -19,16 +19,3 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
-
-# Malloc implementation
-MALLOC_SVELTE := true
-
-# QCom hardware
-BOARD_USES_QCOM_HARDWARE := true
-BOARD_USES_QC_TIME_SERVICES := true
-TARGET_USES_NEW_ION_API := true
-
-# Power HAL
-CM_POWERHAL_EXTENSION := qcom
-TARGET_POWERHAL_VARIANT := qcom
-WITH_QC_PERF := true

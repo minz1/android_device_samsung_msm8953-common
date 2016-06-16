@@ -16,6 +16,7 @@
 COMMON_PATH := device/samsung/msm8953-common
 
 # Include board config fragments
+include $(COMMON_PATH)/PlatformConfig.mk
 include $(COMMON_PATH)/board/*.mk
 
 # Includes
