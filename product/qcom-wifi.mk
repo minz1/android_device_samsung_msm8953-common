@@ -23,6 +23,9 @@ PRODUCT_PACKAGES += \
     wificond \
     macloader
 
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
+
 # Wifi configuration files
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
