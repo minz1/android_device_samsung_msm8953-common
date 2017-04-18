@@ -78,6 +78,12 @@ on post-fs-data
     chmod 0771 /efs
     restorecon -R /efs
 
+    # Allow the radio to control the rment channel
+    chown radio radio /sys/module/f_rmnet/parameters/rmnet_ctl_ch
+    chown radio radio /sys/module/rmnet/parameters/rmnet_ctl_ch
+    chmod 666 /sys/module/f_rmnet/parameters/rmnet_ctl_ch
+    chmod 666 /sys/module/rmnet/parameters/rmnet_ctl_ch
+
 #start camera server as daemon
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
