@@ -1,7 +1,7 @@
 # Media
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
-    $(COMMON_PATH)/configs/media/media_profiles.xml:system/etc/media_profiles.xml
+    $(COMMON_PATH)/configs/media/media_profiles_V1_0.xml:system/vendor/etc/media_profiles_V1_0.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
