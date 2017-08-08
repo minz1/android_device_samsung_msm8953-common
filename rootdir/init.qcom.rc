@@ -93,6 +93,9 @@ on boot
     chown radio system /efs/bluetooth
     chmod 0775 /efs/bluetooth
 
+    # Required for telephony services
+    chmod 644 /proc/cmdline
+
     #Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
     chmod 2770 /dev/socket/qmux_radio
