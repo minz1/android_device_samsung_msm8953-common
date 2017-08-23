@@ -40,7 +40,7 @@ on fs
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
 on init
-    export LD_SHIM_LIBS "/system/lib/libcamera_client.so|libshim_camera_parameters.so"
+    export LD_SHIM_LIBS "/system/lib/libcamera_client.so|libshim_camera_parameters.so:/system/vendor/lib/libizat_core.so|libshims_get_process_name.so"
 
     # Set permissions for persist partition
     mkdir /persist 0771 root system
