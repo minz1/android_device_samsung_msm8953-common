@@ -1,7 +1,6 @@
 # Camera
 PRODUCT_PACKAGES += \
     libmm-qcamera \
-    libshim_camera_parameters \
     Snap
 
 # Permissions
