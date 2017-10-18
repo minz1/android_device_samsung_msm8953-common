@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     libwcnss_qmi \
     wcnss_service \
-    wpa_supplicant
+    wpa_supplicant \
+    macloader
 
 # Wifi configuration files
 PRODUCT_COPY_FILES += \
