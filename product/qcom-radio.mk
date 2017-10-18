@@ -2,6 +2,11 @@
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
+# IPA Manager
+PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml
+
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
@@ -29,6 +34,3 @@ PRODUCT_COPY_FILES += \
 # Security configuration file
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
-
-
-
