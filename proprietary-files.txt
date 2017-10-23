@@ -48,7 +48,6 @@ lib/libalawb_algo.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
 lib/libmm-qcamera.so
-lib/libsblcv.so
 lib/libqomx_core.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
@@ -189,7 +188,6 @@ etc/firmware/cpp_firmware_v1_10_0.fw
 
 # DRM
 bin/qseecomd
-vendor/bin/qseeproxydaemon
 vendor/lib64/lib-sec-disp.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
@@ -331,8 +329,6 @@ vendor/lib/libperipheral_client.so
 
 # Postprocessing
 etc/permissions/com.qti.snapdragon.sdk.display.xml
-vendor/lib64/libmm-als.so
-vendor/lib/libmm-als.so
 
 # QMI
 bin/irsc_util
@@ -354,6 +350,9 @@ vendor/lib64/libthermalioctl.so
 vendor/lib/libthermalclient.so
 
 # Time services
+-app/TimeService/TimeService.apk
+vendor/lib/libTimeService.so
+vendor/lib64/libTimeService.so
 -vendor/lib64/libtime_genoff.so
 -vendor/lib/libtime_genoff.so
 
@@ -361,7 +360,6 @@ vendor/lib/libthermalclient.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Extra Firmware
-etc/firmware/DE.o.msm8953
 etc/firmware/ice40.bin
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
