@@ -39,6 +39,12 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio/mixer/mixer_paths_wcd9330.xml:system/vendor/etc/mixer_paths_wcd9330.xml \
     $(COMMON_PATH)/configs/audio/mixer/mixer_paths_wcd9335.xml:system/vendor/etc/mixer_paths_wcd9335.xml
 
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.broadcastradio@1.0-impl \
+    android.hardware.soundtrigger@2.0-impl
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml
