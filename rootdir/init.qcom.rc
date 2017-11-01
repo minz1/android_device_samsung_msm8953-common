@@ -966,10 +966,8 @@ service battery_monitor /system/bin/battery_monitor
     group system
     disabled
 
-service ril-daemon1 /system/bin/rild -c 2
+service ril-daemon1 /vendor/bin/hw/rild -c 2
     class main
-    socket rild2 stream 660 root radio
-    socket rild-debug2 stream 660 radio system
     user root
     group radio cache inet misc audio log diag system drmrpc sdcard_r sdcard_rw shell readproc
     disabled
