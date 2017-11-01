@@ -25,3 +25,4 @@ ifeq ($(BOARD_VENDOR),samsung)
 ifeq ($(TARGET_BOARD_PLATFORM),msm8953)
 include $(call all-makefiles-under,$(COMMON_PATH))
 endif
+endif
