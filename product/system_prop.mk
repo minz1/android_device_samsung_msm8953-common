@@ -4,15 +4,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio offload
 PRODUCT_PROPERTY_OVERRIDES += \
-    audio.offload.buffer.size.kb=64 \
-    audio.offload.gapless.enabled=true \
-    audio.offload.min.duration.secs=30 \
+    vendor.audio.offload.buffer.size.kb=64 \
+    vendor.audio.offload.gapless.enabled=true \
+    vendor.audio.offload.min.duration.secs=30 \
     av.offload.enable=true \
     tunnel.audio.encode=false
 
 # Audio voice recording
 PRODUCT_PROPERTY_OVERRIDES += \
-    use.voice.path.for.pcm.voip=true \
+    vendor.use.voice.path.for.pcm.voip=true \
     voice.playback.conc.disabled=true \
     voice.record.conc.disabled=true \
     voice.voip.conc.disabled=true
@@ -53,9 +53,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.audio.fluence.speaker=true \
-    persist.audio.fluence.voicecall=true \
-    persist.audio.fluence.voicerec=false \
+    persist.vendor.audio.fluence.speaker=true \
+    persist.vendor.audio.fluence.voicecall=true \
+    persist.vendor.audio.fluence.voicerec=false \
     ro.qc.sdk.audio.fluencetype=none \
     ro.qc.sdk.audio.ssr=false \
     audio.offload.pcm.16bit.enable=true \
