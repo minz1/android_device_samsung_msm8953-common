@@ -20,7 +20,7 @@ PRODUCT_PACKAGES += \
     libcurl \
     tcpdump \
     libkeyutils \
-    sockev \
+#    sockev \
     librmnetctl \
     rmnetcli \
     libxml2 \
