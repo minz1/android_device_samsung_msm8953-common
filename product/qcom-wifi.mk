@@ -23,7 +23,6 @@ PRODUCT_PACKAGES += \
 
 # Wifi configuration files
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/wifi/cred.conf:system/etc/wifi/cred.conf \
     $(COMMON_PATH)/configs/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
     $(COMMON_PATH)/configs/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     $(COMMON_PATH)/configs/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny \
