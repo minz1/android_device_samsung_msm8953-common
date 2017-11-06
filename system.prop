@@ -1,2 +1,4 @@
 # RIL
+DEVICE_PROVISIONED=1
 rild.libargs=-d /dev/smd0
+ro.telephony.ril_class=msm8953RIL

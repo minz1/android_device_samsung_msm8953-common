@@ -23,7 +23,7 @@ include $(COMMON_PATH)/PlatformConfig.mk
 include $(COMMON_PATH)/board/*.mk
 
 # Includes
-TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
+TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
 
 # System prop
 TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop
