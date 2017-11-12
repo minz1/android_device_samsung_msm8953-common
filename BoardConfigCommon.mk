@@ -62,11 +62,10 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # Filesystem
 TARGET_ANDROID_FILESYSTEM_CONFIG_H := $(COMMON_PATH)/android_filesystem_config.h
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
+# Lineage Hardware
 BOARD_HARDWARE_CLASS +=	\
-	$(COMMON_PATH)/cmhw \
-	hardware/samsung/cmhw
+	$(COMMON_PATH)/lineagehw \
+	hardware/samsung/lineagehw
 
 
 # Charger
