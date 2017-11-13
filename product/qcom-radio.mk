@@ -23,7 +23,8 @@ PRODUCT_PACKAGES += \
     sockev \
     librmnetctl \
     rmnetcli \
-    libxml2
+    libxml2 \
+    libtinyxml
 
 # Permissions
 PRODUCT_COPY_FILES += \
