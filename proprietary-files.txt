@@ -345,8 +345,6 @@ vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
 
 # Graphics
-lib/libqdMetaData.so
-lib64/libqdMetaData.so
 -vendor/lib/libsdm-disp-apis.so
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so

@@ -4,7 +4,8 @@ PRODUCT_PACKAGES += \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
-    liboverlay
+    liboverlay \
+    libqdMetaData
 
 # Permissions
 PRODUCT_COPY_FILES += \
