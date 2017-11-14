@@ -515,6 +515,7 @@ vendor/lib/libdisp-aba.so
 vendor/lib64/libdisp-aba.so
 
 # Thermal
+etc/thermal-engine.conf
 vendor/bin/thermal-engine
 vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
