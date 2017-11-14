@@ -119,7 +119,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_3="" \
     ril.subscription.types=NV,RUIM \
     DEVICE_PROVISIONED=1 \
-    rild.libpath=/system/lib/libsec-ril.so \
+    rild.libpath=/system/lib64/libsec-ril.so \
     ro.multisim.set_audio_params=true #\
     #ro.telephony.ril_class=SamsungQcomRIL
 
