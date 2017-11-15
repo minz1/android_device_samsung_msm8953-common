@@ -273,15 +273,15 @@ vendor/lib/hw/gatekeeper.msm8953.so
 vendor/lib64/hw/gatekeeper.msm8953.so
 
 # GPS
--framework/com.qti.location.sdk.jar
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
+#-framework/com.qti.location.sdk.jar
+#-priv-app/com.qualcomm.location/com.qualcomm.location.apk
 bin/garden_app
 bin/loc_launcher
 bin/lowi-server
 bin/xtwifi-client
 bin/xtwifi-inet-agent
 etc/cacert_location.pem
-etc/permissions/com.qti.location.sdk.xml
+#etc/permissions/com.qti.location.sdk.xml
 framework/org.apache.http.legacy.boot.jar
 framework/izat.xt.srv.jar
 lib64/hw/gps.default.so
