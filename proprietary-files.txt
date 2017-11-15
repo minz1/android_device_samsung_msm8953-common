@@ -407,6 +407,7 @@ vendor/lib64/libsd_sdk_display.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdmextension.so
+vendor/lib64/libuiblur.so|64e7d4acdb3b0a4a0f188dc3462a9895
 
 # Graphics firmware
 etc/firmware/a225p5_pm4.fw
