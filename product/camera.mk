@@ -2,6 +2,7 @@
 PRODUCT_PACKAGES += \
     libmm-qcamera \
     camera.msm8953 \
+    libshim_camera_parameters \
     Snap
 
 # Permissions
