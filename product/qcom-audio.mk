@@ -3,6 +3,8 @@ PRODUCT_PACKAGES += \
     audiod \
     audio.a2dp.default \
     audio.primary.msm8953 \
+    audio_policy.default.so \
+    audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
