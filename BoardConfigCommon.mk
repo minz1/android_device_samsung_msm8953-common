@@ -15,9 +15,6 @@
 
 COMMON_PATH := device/samsung/msm8953-common
 
-# Inherit from common
--include device/samsung/qcom-common/BoardConfigCommon.mk
-
 # Include board config fragments
 include $(COMMON_PATH)/PlatformConfig.mk
 include $(COMMON_PATH)/board/*.mk

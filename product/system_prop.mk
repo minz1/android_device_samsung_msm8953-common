@@ -120,8 +120,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ril.subscription.types=NV,RUIM \
     DEVICE_PROVISIONED=1 \
     rild.libpath=/system/lib64/libsec-ril.so \
-    ro.multisim.set_audio_params=true #\
-    #ro.telephony.ril_class=SamsungQcomRIL
+    ro.multisim.set_audio_params=true \
+    ro.telephony.ril_class=msm8953RIL
 
 # SAMP SPCM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -146,3 +146,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
+
+# Qcom-Common Props
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.hw=1 \
+    debug.mdpcomp.logs=0 \
+    persist.hwc.mdpcomp.enable=true
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.call_ring.multiple=0
