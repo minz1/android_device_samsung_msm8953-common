@@ -44,6 +44,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.netmgrd.qos.enable=false \
     ro.use_data_netmgrd=false
 
+# Dex2oat
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.fw.dex2oat_thread_count=8
+
 # Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.speaker=true \
@@ -60,7 +64,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.composition.type=c2d \
     debug.egl.hw=1 \
-    debug.sf.hw=1
+    debug.sf.hw=1 \
+    ro.opengles.version=196610
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -82,8 +87,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.less-secure=true \
     media.stagefright.use-awesome=true \
     media.swhevccodectype=0 \
-    mm.enable.qcom_parser=3183219 \
+    mm.enable.qcom_parser=1048575 \
     mm.enable.smoothstreaming=true \
+    media.msm8956hw=0 \
     mmp.enable.3g2=true
 
 # Misc.
@@ -149,7 +155,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Qcom-Common Props
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.hw=1 \
+    debug.sf.hw=0 \
     debug.mdpcomp.logs=0 \
     persist.hwc.mdpcomp.enable=true
 
