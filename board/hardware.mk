@@ -1,6 +1,4 @@
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
+# LineageHW
 BOARD_HARDWARE_CLASS +=	\
-	hardware/cyanogen/cmhw \
-	hardware/samsung/cmhw #\
+	hardware/samsung/lineagehw #\
 	#$(PLATFORM_PATH)/cmhw
