@@ -26,5 +26,5 @@ $(call inherit-product, vendor/samsung/msm8953-common/msm8953-common-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(COMMON_PATH)/overlay \
-    $(COMMON_PATH)/overlay-lineage
+    $(COMMON_PATH)/overlay #\
+#    $(COMMON_PATH)/overlay-lineage
