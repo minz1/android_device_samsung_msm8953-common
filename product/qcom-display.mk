@@ -1,6 +1,5 @@
 # Display
 PRODUCT_PACKAGES += \
-    AdvancedDisplay \
     copybit.msm8953 \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
