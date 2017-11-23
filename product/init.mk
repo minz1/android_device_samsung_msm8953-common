@@ -12,4 +12,5 @@ PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
     init.qcom.fm.sh \
     init.qcom.post_boot.sh \
+    init.qcom.uicc.sh \
     init.qti.ims.sh
