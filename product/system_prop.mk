@@ -104,7 +104,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=libqti-perfd-client.so
+    ro.vendor.extension_library=libqti-perfd-client.so \
+    ro.vendor.gt_library=libqti-gt.so \
+    ro.vendor.at_library=libqti-at.so
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
