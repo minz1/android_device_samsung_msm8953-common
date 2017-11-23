@@ -64,8 +64,6 @@ lib/soundfx/libreverbwrapper.so
 lib/soundfx/libvisualizer.so
 lib/soundfx/libqcomvisualizer.so
 lib/soundfx/libdownmix.so
-lib/soundfx/libmyspace.so
-lib/soundfx/libaudiosaplus_sec.so
 lib/soundfx/libldnhncr.so
 lib/soundfx/libqcomvoiceprocessing.so
 lib/soundfx/libaudiopreprocessing.so
