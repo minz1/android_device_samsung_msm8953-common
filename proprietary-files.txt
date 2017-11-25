@@ -277,35 +277,36 @@ vendor/lib/hw/gatekeeper.msm8953.so
 vendor/lib64/hw/gatekeeper.msm8953.so
 
 # GPS
-#-framework/com.qti.location.sdk.jar
-#-priv-app/com.qualcomm.location/com.qualcomm.location.apk
-bin/garden_app
 bin/loc_launcher
 bin/lowi-server
+bin/garden_app
 bin/xtwifi-client
 bin/xtwifi-inet-agent
+etc/permissions/com.qti.location.sdk.xml
+etc/permissions/com.qualcomm.location.xml
+etc/permissions/izat.xt.srv.xml
 etc/cacert_location.pem
-#etc/permissions/com.qti.location.sdk.xml
-framework/org.apache.http.legacy.boot.jar
+etc/xtra_root_cert.pem
+framework/com.qti.location.sdk.jar
 framework/izat.xt.srv.jar
 lib64/hw/gps.default.so
-lib64/libloc_api_v02.so
 lib64/libgnsspps.so
 lib64/libgps.utils.so
+-lib64/libloc_api_v02.so
 lib64/libloc_core.so
-lib64/libloc_api_v02.so
 lib64/libloc_ds_api.so
 lib64/libloc_eng.so
 lib64/libloc_pla.so
 lib64/libloc_stub.so
+-priv-app/com.qualcomm.location/com.qualcomm.location.apk
 vendor/lib64/hw/flp.default.so
-vendor/lib64/libDRPlugin.so
 vendor/lib64/libalarmservice_jni.so
 vendor/lib64/libasn1cper.so
 vendor/lib64/libasn1crt.so
 vendor/lib64/libasn1crtx.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libdrplugin_client.so
+vendor/lib64/libDRPlugin.so
 vendor/lib64/libevent_observer.so
 vendor/lib64/libflp.so
 vendor/lib64/libgdtap.so
@@ -319,10 +320,12 @@ vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/liblowi_wifihal_nl.so
+vendor/lib64/libquipc_os_api.so
 vendor/lib64/libulp2.so
 vendor/lib64/libxt_native.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
+vendor/lib64/mmi_gps.so
 
 # Graphics
 vendor/lib/egl/eglSubDriverAndroid.so
