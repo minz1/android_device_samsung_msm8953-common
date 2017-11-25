@@ -1,4 +1,5 @@
 # Wifi
+BOARD_HAVE_SAMSUNG_WIFI := true
 WLAN_CHIPSET := pronto
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HAS_QCOM_WLAN_SDK := true
