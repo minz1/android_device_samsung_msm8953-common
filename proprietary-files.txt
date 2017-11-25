@@ -524,5 +524,13 @@ etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
 
 # Misc
+bin/ssr_diag
+bin/ssr_setup
+bin/wdsdaemon
+bin/subsystem_ramdump
+lib64/libedmnativehelper.so
+lib/libedmnativehelper.so
 vendor/media/LMspeed_508.emd
 vendor/media/PFFprec_600.emd
+vendor/lib64/libfastcvopt.so
+vendor/lib/libfastcvopt.so
