@@ -480,14 +480,18 @@ vendor/lib64/libmmosal.so
 
 # Perf
 bin/msm_irqbalance
+bin/iop
 bin/energy-awareness
 vendor/bin/perfd
+lib64/libqti-iop.so
 vendor/lib64/libqti-at.so
 vendor/lib64/libqti-gt.so
 vendor/lib64/libqti-perfd-client.so
+vendor/lib64/libqti-iop-client.so
 vendor/lib/libqti-at.so
 vendor/lib/libqti-gt.so
 vendor/lib/libqti-perfd-client.so
+vendor/lib/libqti-iop-client.so
 
 # Peripheral manager
 bin/pm-proxy
