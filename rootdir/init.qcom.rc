@@ -136,7 +136,6 @@ on boot
 #   ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax,
     setprop net.tcp.buffersize.wifi    524288,2097152,4194304,262144,524288,1048576
 
-
     setprop ro.telephony.call_ring.multiple false
 
     #enable camera read sensors data
@@ -231,6 +230,14 @@ on boot
     write /proc/sys/net/ipv6/conf/rmnet_usb1/accept_ra 2
     write /proc/sys/net/ipv6/conf/rmnet_usb2/accept_ra 2
     write /proc/sys/net/ipv6/conf/rmnet_usb3/accept_ra 2
+
+    # sensor settings
+    chmod 775 /persist/sensors
+    chmod 664 /persist/sensors/sensors_settings
+    chown system root /persist/sensors/sensors_settings
+    mkdir /data/misc/sensors 775 system root
+
+    start sensors
 
     # To prevent out of order acknowledgements from making
     # connection tracking to treat them as not belonging to
@@ -685,6 +692,12 @@ service qmiproxy /system/bin/qmiproxy
     group radio qcom_diag
     disabled
 
+# QMUX must be in multiple groups to support external process connections
+service qmuxd /system/bin/qmuxd
+    class main
+    user root
+    group radio audio bluetooth gps qcom_diag
+
 service netmgrd /system/bin/netmgrd
     class main
     user root
@@ -695,13 +708,11 @@ service ipacm-diag /system/bin/ipacm-diag
     user system
     socket ipacm_log_file dgram 660 system net_admin
     group net_admin qcom_diag
-    disabled
 
 service ipacm /system/bin/ipacm
     class main
     user net_admin
     group net_admin inet
-    disabled
 
 service qti /system/vendor/bin/qti
     class main
