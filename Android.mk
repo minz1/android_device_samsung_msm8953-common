@@ -45,7 +45,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(ADSP_SYMLINKS)
 ADRENO_IMAGES := \
     a506_zap.b00 a506_zap.b01 a506_zap.b02 a506_zap.mdt
 
-ADRENO_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(ADRENO_IMAGES)))
+ADRENO_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(ADRENO_IMAGES)))
 $(ADRENO_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Adreno Firmware link: $@"
 	@mkdir -p $(dir $@)
@@ -199,7 +199,7 @@ MODEM_IMAGES := \
 	modem.b18 modem.b19 modem.b20 modem.b21 modem.mdt \
 	modem_pr
 
-MODEM_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(MODEM_IMAGES)))
+MODEM_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(MODEM_IMAGES)))
 $(MODEM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Modem firmware link: $@"
 	@mkdir -p $(dir $@)
@@ -424,7 +424,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(TIMA_SYMLINKS)
 VENUS_IMAGES := \
 	venus.b00 venus.b01 venus.b02 venus.b03 venus.b04 venus.mdt
 
-VENUS_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(VENUS_IMAGES)))
+VENUS_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(VENUS_IMAGES)))
 $(VENUS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Venus Firmware link: $@"
 	@mkdir -p $(dir $@)
