@@ -388,7 +388,7 @@ vendor/lib64/libscalar.so|57ab34121680dbb3d9c4be74a3f26a9210a8dde1
 vendor/lib64/libsd_sdk_display.so|31916490a4dcc644a5e09208c469abee43cf40cf
 vendor/lib64/libsdm-color.so|9906b519ba328b9a10695081459e1dee1bbf46d1
 vendor/lib64/libsdm-diag.so|f9ca7943a929d9f60521f6d1099360d8bb6440e6
-vendor/lib64/libsdm-disp-apis.so|7a92054da305786ba58451e265e856b01c3ef18d
+-vendor/lib64/libsdm-disp-apis.so|7a92054da305786ba58451e265e856b01c3ef18d
 vendor/lib64/libsdmextension.so|cfa177edc25c06e1e4d702315a3725229630c81f
 
 # Graphics firmware
