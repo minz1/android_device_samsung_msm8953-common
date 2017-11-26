@@ -298,7 +298,7 @@ lib64/libloc_ds_api.so
 lib64/libloc_eng.so
 lib64/libloc_pla.so
 lib64/libloc_stub.so
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
+-priv-app/com.qualcomm.location/com.qualcomm.location.apk|4ea76d1a5e69ed4674990c32f4238077
 vendor/lib64/hw/flp.default.so
 vendor/lib64/libalarmservice_jni.so
 vendor/lib64/libasn1cper.so
