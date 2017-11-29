@@ -2,6 +2,7 @@
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+BOARD_ROOT_EXTRA_FOLDERS   := dsp efs firmware firmware-modem persist
 
 # Partition sizes
 BOARD_BOOTIMAGE_PARTITION_SIZE      := 33554432
