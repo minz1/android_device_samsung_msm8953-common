@@ -225,8 +225,12 @@ vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_ubifocus_lib.so
 vendor/lib/libmmcamera_vpu_module.so
+vendor/lib/libseemore.so
 vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libts_detected_face_hal.so
+
+# Camera - Kuntao
+vendor/lib/libllvd_smore.so|9aae0936cfb6cb11dabd12eab73111b0
 
 # Camera Actuator
 vendor/lib/libactuator_dw9714.so
