@@ -26,9 +26,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=0
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    camera2.portability.force_api=0
-
 # Chipname
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.chipname=MSM8953
@@ -41,8 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.netmgrd.qos.enable=false \
-    ro.use_data_netmgrd=false
+    ro.use_data_netmgrd=true
 
 # Dex2oat
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -54,7 +50,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicecall=true \
     persist.audio.fluence.voicerec=false \
     ro.qc.sdk.audio.fluencetype=none \
-    ro.qc.sdk.audio.ssr=false
+    ro.qc.sdk.audio.ssr=false \
+    audio.offload.pcm.16bit.enable=true \
+    audio.offload.pcm.24bit.enable=true \
+    audio.offload.track.enable=true \
+    audio.deep_buffer.media=true
 
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -112,7 +112,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.add_power_save=1 \
     persist.radio.apm_sim_not_pwdn=1 \
-    persist.radio.sib16_support=1
+    persist.radio.sib16_support=1 \
+    ro.radio.noril=no
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
