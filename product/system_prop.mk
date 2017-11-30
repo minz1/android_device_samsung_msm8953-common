@@ -17,6 +17,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     voice.record.conc.disabled=true \
     voice.voip.conc.disabled=true
 
+# Battery
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cutoff_voltage_mv=3400
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.hfp.client=1 \
@@ -24,7 +28,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    camera2.portability.force_api=0
+    camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
+    camera.display.umax=1920x1080 \
+    camera.display.lmax=1280x720 \
+    camera.lowpower.record.enable=1
 
 # Chipname
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -32,17 +39,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Connectivity Engine
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.cne.dpm=0 \
     persist.cne.feature=0 \
-    persist.dpm.feature=0
+    persist.data.dpm.enable=true
 
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.use_data_netmgrd=true
+    ro.use_data_netmgrd=true \
+    persist.data.netmgrd.qos.enable=false
 
 # Dex2oat
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sys.fw.dex2oat_thread_count=8
+    ro.sys.fw.dex2oat_thread_count=4
 
 # Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -63,8 +70,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.composition.type=c2d \
-    debug.egl.hw=1 \
-    debug.sf.hw=1 \
+    debug.egl.hw=0 \
+    debug.sf.hw=0 \
     ro.opengles.version=196610
 
 # GPS
@@ -112,11 +119,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.add_power_save=1 \
     persist.radio.apm_sim_not_pwdn=1 \
-    persist.radio.sib16_support=1 \
-    ro.radio.noril=no
-
-# RIL
-PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.sib16_support=0 \
+    ro.radio.noril=no \
+    persist.radio.custom_ecc=1 \
     persist.rild.nitz_long_ons_0="" \
     persist.rild.nitz_long_ons_1="" \
     persist.rild.nitz_long_ons_2="" \
@@ -130,7 +135,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
     rild.libpath=/system/lib64/libsec-ril.so \
     ro.multisim.set_audio_params=true \
-    ro.telephony.ril_class=msm8953RIL
+    ro.telephony.ril_class=msm8953RIL \
+    persist.data.mode=concurrent
 
 # SAMP SPCM
 PRODUCT_PROPERTY_OVERRIDES += \
