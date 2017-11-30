@@ -57,26 +57,8 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 
 # Audio SoundFX
-lib/soundfx/libeffectproxy.so
 lib/soundfx/libaudioeffectoffload.so
-lib/soundfx/libbundlewrapper.so
-lib/soundfx/libreverbwrapper.so
-lib/soundfx/libvisualizer.so
-lib/soundfx/libqcomvisualizer.so
-lib/soundfx/libdownmix.so
-lib/soundfx/libldnhncr.so
-lib/soundfx/libqcomvoiceprocessing.so
-lib/soundfx/libaudiopreprocessing.so
-lib64/soundfx/libeffectproxy.so
 lib64/soundfx/libaudioeffectoffload.so
-lib64/soundfx/libbundlewrapper.so
-lib64/soundfx/libreverbwrapper.so
-lib64/soundfx/libvisualizer.so
-lib64/soundfx/libqcomvisualizer.so
-lib64/soundfx/libdownmix.so
-lib64/soundfx/libldnhncr.so
-lib64/soundfx/libqcomvoiceprocessing.so
-lib64/soundfx/libaudiopreprocessing.so
 
 # Bluetooth
 bin/btnvtool
@@ -432,7 +414,6 @@ etc/permissions/qti-vzw-ims-internal.xml
 etc/permissions/imsmanager_library.xml
 etc/permissions/secimshttpclient_library.xml
 etc/permissions/vsimservice_library.xml
-framework/ims-common.jar
 framework/secimshttpclient.jar
 framework/imsmanager.jar
 lib64/libsec-ims.so

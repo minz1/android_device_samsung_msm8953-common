@@ -36,6 +36,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
 
+# Samsung
+PRODUCT_PACKAGES += \
+    libsecnativefeature \
+    libsecril-client
+
 # Security configuration file
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config \
