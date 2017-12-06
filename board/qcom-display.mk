@@ -8,6 +8,7 @@ TARGET_USES_GRALLOC1 := true
 TARGET_USES_HWC2 := true
 TARGET_USES_OVERLAY := true
 SF_START_GRAPHICS_ALLOCATOR_SERVICE := true
+TARGET_USES_LEGACY_LIBLIGHT := true
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
