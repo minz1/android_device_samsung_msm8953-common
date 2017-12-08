@@ -1,0 +1,2 @@
+# Seccomp
+BOARD_SECCOMP_POLICY := $(PLATFORM_PATH)/seccomp
