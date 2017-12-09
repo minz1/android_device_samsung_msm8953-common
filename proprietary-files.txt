@@ -467,6 +467,10 @@ vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmosal.so
 
+# Media - from oneplus3 OOS 5.0
+-vendor/lib/libgpustats.so|74e606636e29679926e708984e90ed91
+-vendor/lib64/libgpustats.so|4e44c6c1a54d883b3a2659595d99c857
+
 # Perf
 bin/msm_irqbalance
 bin/iop
