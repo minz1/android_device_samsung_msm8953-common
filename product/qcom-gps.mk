@@ -1,10 +1,10 @@
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8953 \
     libcurl \
+    libgnss \
     libgnsspps \
-    android.hardware.gnss@1.0-impl \
-    libshims_get_process_name
+    android.hardware.gnss@1.0-impl-qti \
+    android.hardware.gnss@1.0-service-qti
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:system/etc/flp.conf \
