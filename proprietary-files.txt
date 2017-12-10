@@ -285,7 +285,7 @@ lib64/vendor.qti.gnss@1.0.so|6be3b5f427e0c0e6b17717408d77c4e94b085fb7
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk|eff98f1264698c4b23a928bf4c468383f9c90a56
 vendor/bin/hw/vendor.qti.gnss@1.0-service|f29f6b27971fe9e00d5a534e7c3aae443fb42eb9
 vendor/bin/loc_launcher|b16a3b45435b9c9ce4d035750564bc79ff6318fb
-vendor/bin/slim_daemon|8df52257e5408b80060d91587d0b5adb1543af2d
+vendor/bin/slim_daemon|ee7e1fd0cd3c6f8e53f2e5c36defc7895b81d6f0
 vendor/bin/xtwifi-client|2047b18105d5ad80aa1bf93db79cccda29ea6bb4
 vendor/bin/xtwifi-inet-agent|fcd77122f832e18092ad8d057e4d623c26837d80
 vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
@@ -293,7 +293,7 @@ vendor/etc/init/vendor.qti.gnss@1.0-service.rc|ba25c7c3e8c3ef52b15f7f420012c80a4
 vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
 vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so|69bff672aaffd07f36625bc1d339830fcc9ef654
 vendor/lib64/libalarmservice_jni.so|def82bd07992c1d1131e45ca443b0845311f4f9b
-vendor/lib64/libdataitems.so|9083a3bed861588d633b941a4fd3bb0b4ff93c20
+vendor/lib64/libdataitems.so|2b1c95edfdb38ccef63c02635b448633c79f8a02
 vendor/lib64/libdrplugin_client.so|d06a944bbd4ad6111fbab547161aa03b71b25430
 vendor/lib64/libDRPlugin.so|b983deacdb55f2a7233a7a7f4d0c6fba7c30ecf0
 vendor/lib64/libevent_observer.so|648996fe4d9b76640535b7cd1c076d516b8aa8d7
@@ -468,8 +468,8 @@ vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmosal.so
 
 # Media - from oneplus3 OOS 5.0
--vendor/lib/libgpustats.so|74e606636e29679926e708984e90ed91
--vendor/lib64/libgpustats.so|4e44c6c1a54d883b3a2659595d99c857
+-vendor/lib/libgpustats.so|176395bf6055b3475080d9bae65684820bafab49
+-vendor/lib64/libgpustats.so|34c19702c14ddfb22fe0caffb4a22f842efe206c
 
 # Perf
 bin/msm_irqbalance
