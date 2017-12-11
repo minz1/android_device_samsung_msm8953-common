@@ -46,5 +46,5 @@ PRODUCT_PACKAGES += \
 
 # Security configuration file
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config \
-    $(LOCAL_PATH)/configs/sec_config_oem:system/etc/sec_config_oem
+    $(COMMON_PATH)/configs/sec_config:system/etc/sec_config \
+    $(COMMON_PATH)/configs/sec_config_oem:system/etc/sec_config_oem
