@@ -4,6 +4,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
+    libdisplayconfig \
     liboverlay \
     libqdMetaData \
     android.hardware.graphics.allocator@2.0-impl \
