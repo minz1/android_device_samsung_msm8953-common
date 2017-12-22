@@ -462,6 +462,8 @@ vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmosal.so
+vendor/media/LMspeed_508.emd
+vendor/media/PFFprec_600.emd
 
 # Perf
 bin/msm_irqbalance
@@ -511,7 +513,3 @@ vendor/lib/mediadrm/libwvdrmengine.so
 etc/firmware/ice40.bin
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
-
-# Misc
-vendor/media/LMspeed_508.emd
-vendor/media/PFFprec_600.emd
