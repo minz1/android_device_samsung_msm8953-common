@@ -31,7 +31,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
     camera.display.umax=1920x1080 \
     camera.display.lmax=1280x720 \
-    camera.lowpower.record.enable=1
+    camera.lowpower.record.enable=1 \
+    vidc.enc.dcvs.extra-buff-count=2
 
 # Chipname
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -97,7 +98,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.qcom_parser=1048575 \
     mm.enable.smoothstreaming=true \
     media.msm8956hw=0 \
-    mmp.enable.3g2=true
+    mmp.enable.3g2=true \
+    vidc.enc.disable_bframes=1 \
+    vidc.disable.split.mode=1 \
+    vidc.dec.downscalar_width=1920 \
+    vidc.dec.downscalar_height=1088
 
 # Misc.
 PRODUCT_PROPERTY_OVERRIDES += \
