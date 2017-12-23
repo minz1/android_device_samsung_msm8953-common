@@ -4,4 +4,4 @@ PRODUCT_COPY_FILES += \
 
 # Power HAL
 PRODUCT_PACKAGES += \
-    power.qcom
+    power.msm8953
