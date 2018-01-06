@@ -18,7 +18,7 @@
 set -e
 
 BOARD_COMMON=msm8953-common
-DEVICES_ALL="j7poplteusc j7popltespr"
+DEVICES_ALL="j7poplteusc j7popltespr c7ltechn"
 VENDOR=samsung
 
 INITIAL_COPYRIGHT_YEAR=2017
