@@ -687,6 +687,7 @@ public:
     static const char KEY_OIS[];
     static const char PIXEL_FORMAT_YUV420SP_NV21[];
     static const char KEY_OIS_SUPPORTED[];
+    static const char KEY_SUPPORTED_EFFECT_PREVIEW_FPS_RANGE[];
     static const char KEY_SUPPORTED_OIS_MODES[];
     static const char OIS_ON_STILL[];
     static const char OIS_OFF[];

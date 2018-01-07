@@ -177,6 +177,7 @@ const char CameraParameters::LIGHTFX_HDR[] = "high-dynamic-range";
 const char CameraParameters::KEY_OIS[] = "ois";
 const char CameraParameters::PIXEL_FORMAT_YUV420SP_NV21[] = "nv21";
 const char CameraParameters::KEY_OIS_SUPPORTED[] = "ois-supported";
+const char CameraParameters::KEY_SUPPORTED_EFFECT_PREVIEW_FPS_RANGE[] = "effect-available-fps-values";
 const char CameraParameters::KEY_SUPPORTED_OIS_MODES[] = "ois-values";
 const char CameraParameters::OIS_ON_STILL[] = "ois-still";
 const char CameraParameters::OIS_OFF[] = "ois-ff";
