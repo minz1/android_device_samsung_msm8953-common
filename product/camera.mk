@@ -3,6 +3,10 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     Snap
 
+# Samsung Camera Libraries
+PRODUCT_PACKAGES += \
+    libjpega
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
