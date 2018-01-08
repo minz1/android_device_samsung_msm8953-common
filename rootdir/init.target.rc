@@ -175,6 +175,11 @@ on boot
     chown system drmrpc /sys/devices/soc.0/78b8000.i2c/i2c-4/4-0020/input/input0/secure_touch_enable
     chown system drmrpc /sys/devices/soc.0/78b8000.i2c/i2c-4/4-0020/input/input0/secure_touch
 
+service at_distributor /system/bin/at_distributor
+    class late_start
+    user root
+    group radio misc log
+
 service wcnss-service /system/bin/wcnss_service
     class main
     user system
