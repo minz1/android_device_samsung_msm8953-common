@@ -197,7 +197,7 @@ exif_loader_write (ExifLoader *eld, unsigned char *buf, unsigned int len)
      * First fill the small buffer. Only continue if the buffer
      * is filled. Note that EXIF data contains at least 12 bytes.
      */
-    i = MIN (len, sizeof (eld->b) - eld->b_len);
+    i = (unsigned int)MIN (len, sizeof (eld->b) - eld->b_len);
     if (i) {
         memcpy (&eld->b[eld->b_len], buf, i);
         eld->b_len += i;

@@ -104,7 +104,7 @@ jpeg_data_save_file (JPEGData *data, const char *path)
 		free (d);
 		return 0;
 	}
-	written = fwrite (d, 1, size, f);
+	written = (unsigned int)fwrite (d, 1, size, f);
 	fclose (f);
 	free (d);
 	if (written == size)  {
@@ -373,7 +373,7 @@ jpeg_data_load_file (JPEGData *data, const char *path)
 
 	/* For now, we read the data into memory. Patches welcome... */
 	fseek (f, 0, SEEK_END);
-	size = ftell (f);
+	size = (unsigned int)ftell (f);
 	fseek (f, 0, SEEK_SET);
 	d = malloc (size);
 	if (!d) {

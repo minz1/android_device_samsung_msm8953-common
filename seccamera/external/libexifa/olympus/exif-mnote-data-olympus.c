@@ -220,7 +220,7 @@ exif_mnote_data_olympus_save (ExifMnoteData *ne,
 				return;
 			}
 			*buf = t;
-			*buf_size = ts;
+			*buf_size = (unsigned int)ts;
 			exif_set_long (*buf + o, n->order, datao + doff);
 		} else
 			doff = o;
@@ -459,7 +459,7 @@ exif_mnote_data_olympus_load (ExifMnoteData *en,
 	     */
 	    s = exif_format_get_size (n->entries[tcount].format) *
 		   			 n->entries[tcount].components;
-		n->entries[tcount].size = s;
+		n->entries[tcount].size = (unsigned int)s;
 		if (s) {
 			size_t dataofs = o + 8;
 			if (s > 4) {
@@ -501,7 +501,7 @@ exif_mnote_data_olympus_load (ExifMnoteData *en,
 		++tcount;
 	}
 	/* Store the count of successfully parsed tags */
-	n->count = tcount;
+	n->count = (unsigned int)tcount;
 }
 
 static unsigned int
