@@ -77,6 +77,7 @@ lib/libarcsoft_selfie_camera_lite.so
 lib/libarcsoft_wideselfie.so
 lib/libatomjpeg.so
 lib/libdmcFaceEngine.so
+lib/libedmnativehelper.so
 lib/libmm-qcamera.so
 lib/libmmcamera2_is.so
 lib/libmmcamera2_q3a_core.so
@@ -86,14 +87,19 @@ lib/libmmcamera_pdaf.so
 lib/libmmcamera_pdafcamif.so
 lib/libmmjpeg_interface.so
 lib/libcameraservice_cameramodule.so
+lib/libpalmMobileDetectorFull.so
 lib/libQjpeg.so
 lib/libqomx_core.so
+lib/libquramresize.so
+lib/libsccore.so
 lib/libseccameracore.so
 lib/libsecjpegquram.so
 lib/libSisoCameraDistortionEffects.so
+lib/libsupershot.so
 lib64/libarcsoft_bestphoto_select.so
 lib64/libatomjpeg.so
 lib64/libQjpeg.so
+lib64/libsccore.so
 lib64/libsecjpegquram.so
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
@@ -221,7 +227,10 @@ vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_ubifocus_lib.so
 vendor/lib/libmmcamera_vpu_module.so
+vendor/lib/libsecimaging.so
+vendor/lib/libsecjpeginterface.so
 vendor/lib/libseemore.so
+vendor/lib/libSEF.so
 vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libts_detected_face_hal.so
 vendor/lib64/libmmcamera_dbg.so
@@ -230,6 +239,9 @@ vendor/lib64/libmmcamera2_sensor_debug.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
+vendor/lib64/libsecimaging.so
+vendor/lib64/libsecjpeginterface.so
+vendor/lib64/libSEF.so
 
 # Camera - Kuntao
 vendor/lib/libllvd_smore.so|9aae0936cfb6cb11dabd12eab73111b0
