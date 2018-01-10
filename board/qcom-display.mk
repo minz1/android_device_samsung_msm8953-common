@@ -5,6 +5,8 @@ TARGET_CONTINUOUS_SPLASH_ENABLED := true
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
+BOARD_USES_ADRENO := true
+TARGET_USES_OVERLAY := true
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
