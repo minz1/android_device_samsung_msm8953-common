@@ -1,2 +1,1 @@
-# RIL
-rild.libargs=-d /dev/ttyS0
+# msm8953-common system.prop
