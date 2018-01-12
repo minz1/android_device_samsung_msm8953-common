@@ -18,9 +18,6 @@ PRODUCT_PACKAGES += \
     curl \
     libbson \
     libcurl \
-    tcpdump \
-    libkeyutils \
-    sockev \
     librmnetctl \
     rmnetcli \
     libxml2 \
