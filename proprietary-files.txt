@@ -488,6 +488,7 @@ vendor/media/PFFprec_600.emd
 bin/msm_irqbalance
 bin/iop
 bin/energy-awareness
+-framework/QPerformance.jar
 vendor/bin/perfd
 lib64/libqti-iop.so
 vendor/lib64/libqti-at.so
