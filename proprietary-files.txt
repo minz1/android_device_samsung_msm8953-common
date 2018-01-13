@@ -511,6 +511,11 @@ vendor/bin/mm-pp-dpps
 vendor/lib/libdisp-aba.so
 vendor/lib64/libdisp-aba.so
 
+# SSR
+bin/ssr_diag
+bin/ssr_setup
+bin/subsystem_ramdump
+
 # Thermal
 etc/thermal-engine.conf
 vendor/bin/thermal-engine
