@@ -2,7 +2,6 @@
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.carrier.rc \
-    init.class_main.sh \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
