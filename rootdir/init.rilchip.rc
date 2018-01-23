@@ -49,30 +49,3 @@ service SMD-daemon /system/bin/smdexe
     class main
     user root
     group system radio inet net_raw
-
-service start_netmgrd /system/bin/sh /system/etc/control_netmgrd.sh start
-    class main
-    user root
-    group radio
-    disabled
-    oneshot
-
-service stop_netmgrd /system/bin/sh /system/etc/control_netmgrd.sh stop
-    class main
-    user root
-    group radio
-    disabled
-    oneshot
-
-on property:ril.restart.netmgrd=true
-    start stop_netmgrd
-
-on property:init.svc.netmgrd=stopped
-    start start_netmgrd
-
-on property:sys.control.netmgr=started
-    setprop ril.restart.netmgrd false
-    setprop sys.control.netmgr done
-
-on property:init.svc.netmgrd=restarting
-    setprop sys.control.netmgr restarted

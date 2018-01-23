@@ -12,7 +12,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.wifi.rc \
     ueventd.qcom.rc \
-    control_netmgrd.sh \
     hsic.control.bt.sh \
     init.ath3k.bt.sh \
     init.crda.sh \
