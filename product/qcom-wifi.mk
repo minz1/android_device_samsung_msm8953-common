@@ -16,6 +16,7 @@ PRODUCT_PACKAGES += \
     libwcnss_qmi \
     libwifi-hal-qcom \
     dhcpcd.conf \
+    macloader \
     wcnss_service \
     wpa_supplicant \
     wpa_supplicant.conf
