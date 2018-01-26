@@ -120,10 +120,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.gt_library=libqti-gt.so \
     ro.vendor.at_library=libqti-at.so
 
-# Radio
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=msm8953RIL
-
 # SAMP SPCM
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.config.samp_spcm_enable=true \
