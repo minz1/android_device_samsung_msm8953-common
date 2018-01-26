@@ -1,5 +1,5 @@
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/msm8953-common/ril
+TARGET_RIL_VARIANT := caf
 BOARD_PROVIDES_LIBRIL := true
 
 # Protobuf

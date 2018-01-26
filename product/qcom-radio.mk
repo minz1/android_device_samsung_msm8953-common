@@ -35,8 +35,7 @@ PRODUCT_PACKAGES += \
 
 # Samsung
 PRODUCT_PACKAGES += \
-    libsecnativefeature \
-    libsecril-client
+    libsecnativefeature
 
 # Security configuration file
 PRODUCT_COPY_FILES += \
