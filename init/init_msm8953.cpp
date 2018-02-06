@@ -37,10 +37,13 @@
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
+
 #include "property_service.h"
 #include "vendor_init.h"
 
 #include "init_msm8953.h"
+
+using android::init::property_set;
 
 __attribute__ ((weak))
 void init_target_properties()
