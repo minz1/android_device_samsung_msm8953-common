@@ -27,17 +27,6 @@ include $(call all-makefiles-under,$(COMMON_PATH))
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := RemovePackages
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_OVERRIDES_PACKAGES := AudioFX
-LOCAL_UNINSTALLABLE_MODULE := true
-LOCAL_CERTIFICATE := PRESIGNED
-
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-
 # ADSP
 ADSP_IMAGES := \
 	adsp.b00 adsp.b01 adsp.b02 adsp.b03 adsp.b04 adsp.b05 adsp.b06 adsp.b07 \
