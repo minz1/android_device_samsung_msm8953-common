@@ -51,8 +51,8 @@ service SMD-daemon /system/bin/smdexe
     group system radio inet net_raw
 
 on property:persist.radio.multisim.config=dsds
-    start ril-daemon2
+    start ril-daemon1
 
 on property:persist.radio.multisim.config=tsts
+    start ril-daemon1
     start ril-daemon2
-    start ril-daemon3
