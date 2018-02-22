@@ -54,9 +54,6 @@ on boot
     chown system radio /sys/class/sec/sec_touchkey/sar_enable
     chown system radio /sys/class/sec/sec_touchkey/sw_reset
 
-# SSWAP
-    write /proc/sys/vm/swappiness 130
-
 # Permissions for Input Booster
     chmod 0660 /sys/class/input_booster/level
     chown system radio /sys/class/input_booster/level
@@ -137,13 +134,6 @@ service imsd /system/bin/imsd
     user root
     group system radio net_raw inet net_admin readproc
 
-# SSWAP
-service swapon /sbin/sswap -s
-    class core
-    user root
-    group root
-    seclabel u:r:sswap:s0
-    oneshot
 
 # for wlan FTM app
 service ftm_ptt /system/bin/ftm_ptt -d
