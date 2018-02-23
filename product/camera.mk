@@ -1,7 +1,6 @@
 # Camera
 PRODUCT_PACKAGES += \
-    libmm-qcamera \
-    Snap
+    libmm-qcamera
 
 # Samsung Camera Libraries
 PRODUCT_PACKAGES += \
