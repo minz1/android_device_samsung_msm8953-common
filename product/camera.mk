@@ -1,7 +1,3 @@
-# Camera
-PRODUCT_PACKAGES += \
-    libmm-qcamera
-
 # Samsung Camera Libraries
 PRODUCT_PACKAGES += \
     libjpega
