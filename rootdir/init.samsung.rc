@@ -251,7 +251,6 @@ on post-fs-data
     chmod 0775 /system/etc/security/.drm
 
     # Added for Playready DRM Support
-	cpyContent_rmdir /data/data/.drm
     mkdir /data/.drm 0775
     chown drm system /data/.drm
     chmod 0775 /data/.drm
@@ -958,23 +957,6 @@ service scs /system/bin/scs
     class main
     user system
     group system
-    oneshot
-
-service drm /system/bin/drmserver
-    class main
-    user drm
-# [ SEC_MM_DRM
-# fix
-    group system drm inet drmrpc radio readproc dpgp
-# org
-#    group drm system inet drmrpc
-# ]
-
-# bootchecker
-service bootchecker /system/bin/bootchecker
-    class late_start
-    user system
-    group system log
     oneshot
 
 # icd
