@@ -8,33 +8,13 @@ import /init.fac.rc
 
 on init
 #Carrier
-	mkdir /carrier 0771 system system
-
-on post-fs-data
-
-#Private Mode
-    mkdir /mnt/shell/ 0750 shell shell
-    mkdir /mnt/shell/privatemode 0700 system system
-    mkdir /storage/Private 0000 system system
-    mkdir /data/privatemode 0770 system system
-    chown system system /data/privatemode
-    restorecon /data/privatemode
+    mkdir /carrier 0771 system system
 
 on early-boot
     chown bluetooth net_bt_stack /dev/ttyHS0
     chmod 0660 /dev/ttyHS0
 
 on fs
-
-#For Absolute Persistence Partition
-    mkdir /persdata 0755 system system
-    mkdir /persdata/absolute 0750 system system
-
-    chown system system /persdata
-    chmod 0755 /persdata
-    chown system system /persdata/absolute
-    chmod 0750 /persdata/absolute
-
 # Fingerprint
     mkdir /dev/validity 0770 system system
     mkdir /data/validity 0770 system system
@@ -121,11 +101,11 @@ on boot
     setprop ro.mst.support 0
 
 #SLocation
-	service cellgeofenced /system/bin/cellgeofenced
-		class main
-		socket cellgeofence seqpacket 0660 gps system
-		user gps
-		group system inet
+service cellgeofenced /system/bin/cellgeofenced
+    class main
+    socket cellgeofence seqpacket 0660 gps system
+    user gps
+    group system inet
 
 # IMS Stack
 service imsd /system/bin/imsd

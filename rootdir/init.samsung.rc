@@ -166,9 +166,6 @@ on post-fs
 
 on post-fs-data
 # [ SEC_SELINUX_PORTING_COMMON
-    # Reload SE Android Policy
-    setprop selinux.reload_policy 1
-
     # sec_efs_file
     mkdir /efs/sec_efs 0775 radio system
 # ] SEC_SELINUX_PORTING_COMMON
@@ -201,11 +198,6 @@ on post-fs-data
     #SideSync
     chown system system /dev/android_ssusbcon
     chmod 0660 /dev/android_ssusbcon
-
-    # added by init.qcom.rc (booting performance team) >>>
-    write /sys/kernel/boot_adsp/boot 1
-    write /sys/kernel/boot_slpi/boot 1
-    # <<< added by init.qcom.rc (booting performance team)
 
    # Avoid predictable entropy pool. Carry over entropy from previous boot.
     wait /dev/urandom
@@ -251,7 +243,6 @@ on post-fs-data
     chmod 0775 /system/etc/security/.drm
 
     # Added for Playready DRM Support
-	cpyContent_rmdir /data/data/.drm
     mkdir /data/.drm 0775
     chown drm system /data/.drm
     chmod 0775 /data/.drm
@@ -299,24 +290,6 @@ on post-fs-data
 # CCIC control option
     chown system radio /sys/class/sec/ccic/ccic_control_option
     chown system radio /sys/class/sec/ccic/fw_update
-
-# [ SEC_SELINUX_PORTING_COMMON
-    restorecon -R /efs
-    restorecon -R /carrier
-# ] SEC_SELINUX_PORTING_COMMON
-
-# Downloadable Filter
-    mkdir /data/DownFilters       0775 system system
-    mkdir /data/DownFilters/Lib   0775 system system
-    mkdir /data/DownFilters/Lib64 0775 system system
-    mkdir /data/DownFilters/Res   0775 system system
-    mkdir /data/DownFilters/Tex   0775 system system
-
-# Samsung font
-    mkdir  /data/app_fonts 0775 system system
-
-# Open Theme
-    mkdir /data/overlays 0745 system system
 
 on boot
     # set RLIMIT_NICE to allow priorities from 19 to -20
@@ -958,23 +931,6 @@ service scs /system/bin/scs
     class main
     user system
     group system
-    oneshot
-
-service drm /system/bin/drmserver
-    class main
-    user drm
-# [ SEC_MM_DRM
-# fix
-    group system drm inet drmrpc radio readproc dpgp
-# org
-#    group drm system inet drmrpc
-# ]
-
-# bootchecker
-service bootchecker /system/bin/bootchecker
-    class late_start
-    user system
-    group system log
     oneshot
 
 # icd
