@@ -32,9 +32,10 @@ service diag_mdlog_stop /system/bin/diag_mdlog -k
 service ril-daemon1 /system/bin/rild -l /system/lib64/libsec-ril-dsds.so -c 2
     class main
     socket rild2 stream 660 root radio
+    socket sap_uim_socket2 stream 660 bluetooth bluetooth
     socket rild-debug2 stream 660 radio system
     user root
-    group radio cache inet misc audio log qcom_diag system drmrpc sdcard_r sdcard_rw shell readproc
+    group radio cache inet misc audio log wakelock qcom_diag system drmrpc sdcard_r sdcard_rw shell readproc
     disabled
 
 service SMD-daemon /system/bin/smdexe
