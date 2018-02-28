@@ -1,7 +1,8 @@
 # Samsung Camera Libraries
 PRODUCT_PACKAGES += \
     libjpega \
-    camera.msm8953
+    camera.msm8953 \
+    Snap
 
 # Permissions
 PRODUCT_COPY_FILES += \
