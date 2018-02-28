@@ -32,7 +32,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera.display.umax=1920x1080 \
     camera.display.lmax=1280x720 \
     camera.lowpower.record.enable=1 \
-    vidc.enc.dcvs.extra-buff-count=2
+    vidc.enc.dcvs.extra-buff-count=2 \
+    persist.camera.feature.cac=1 \
+    persist.camera.gyro.disable=0 \
+    persist.camera.imglib.cac3=2 \
+    persist.camera.isp.clock.optmz=0
 
 # Chipname
 PRODUCT_PROPERTY_OVERRIDES += \
