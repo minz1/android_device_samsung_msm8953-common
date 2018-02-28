@@ -54,9 +54,12 @@ on boot
     chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/state
     chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/type
 
-# Audio NXP
+# Audio NXP for c7lte
     chmod 0660 /dev/i2c-1
     chown audio audio /dev/i2c-1
+# Audio NXP for c7prolte
+    chmod 0660 /dev/i2c-25
+    chown audio audio /dev/i2c-25
 
 # vibrator type
     chmod 0666 "/sys/class/sec/vib/dc_pmic"
