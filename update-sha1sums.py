@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -38,6 +38,12 @@ for index, line in enumerate(lines):
         needSHA1 = (' - from' in line)
         continue
 
+    if ':' in line:
+         oLine = line.split(':')[0]
+         line = line.split(':')[1]
+    else:
+         oLine = None
+
     if needSHA1:
         # Remove existing SHA1 hash
         line = line.split('|')[0]
@@ -48,7 +54,11 @@ for index, line in enumerate(lines):
             file = open('%s/%s' % (vendorPath, line), 'rb').read()
 
         hash = sha1(file).hexdigest()
-        lines[index] = '%s|%s\n' % (line, hash)
+
+        if oLine:
+            lines[index] = '%s|%s\n' % (oLine + ':' + line, hash)
+        else:
+            lines[index] = '%s|%s\n' % (line, hash)
 
 with open('proprietary-files.txt', 'w') as file:
     for line in lines:
