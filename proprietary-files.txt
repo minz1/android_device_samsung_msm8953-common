@@ -330,8 +330,8 @@ vendor/lib64/libTimeService.so
 -vendor/lib64/libtime_genoff.so
 -vendor/lib/libtime_genoff.so
 
-# WideVine - from c7proltedd
-vendor/lib/mediadrm/libwvdrmengine.so|bf7d8b74bee5cec959f7dd3dfc6f655334424f80
+# WideVine
+vendor/lib/mediadrm/libwvdrmengine.so
 
 # Extra Firmware
 etc/firmware/ice40.bin
