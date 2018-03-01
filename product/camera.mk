@@ -1,3 +1,7 @@
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Samsung Camera Libraries
 PRODUCT_PACKAGES += \
     libjpega
