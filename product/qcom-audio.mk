@@ -26,7 +26,6 @@ PRODUCT_COPY_FILES += \
     hardware/qcom/audio-caf/msm8996/configs/msm8953/audio_policy.conf:system/etc/audio_policy.conf
 
 PRODUCT_COPY_FILES += \
-    hardware/qcom/audio-caf/msm8996/configs/msm8953/mixer_paths.xml:system/etc/mixer_paths.xml \
     hardware/qcom/audio-caf/msm8996/configs/msm8953/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml \
     hardware/qcom/audio-caf/msm8996/configs/msm8953/mixer_paths_qrd_sku3.xml:system/etc/mixer_paths_qrd_sku3.xml \
     hardware/qcom/audio-caf/msm8996/configs/msm8953/mixer_paths_qrd_skuh.xml:system/etc/mixer_paths_qrd_skuh.xml \
