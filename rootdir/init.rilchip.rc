@@ -13,7 +13,7 @@ service diag_uart_log /system/bin/diag_uart_log
 service qmuxd /system/bin/qmuxd
     class main
     user root
-    group radio audio bluetooth gps qcom_diag
+    group radio audio bluetooth gps nfc qcom_diag
 
 service diag_mdlog_start /system/bin/diag_mdlog
     class late_start
@@ -43,6 +43,8 @@ service SMD-daemon /system/bin/smdexe
     group system radio inet net_raw
 
 on property:persist.radio.multisim.config=dsds
+    stop ril-daemon
+    start ril-daemon
     start ril-daemon1
 
 on property:persist.radio.multisim.config=tsts
