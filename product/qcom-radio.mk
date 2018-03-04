@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
     libsecnativefeature \
     libsecril-client
 
+# Shim
+PRODUCT_PACKAGES += \
+    libsec-ims_shim
+
 # Security configuration file
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/sec_config:system/etc/sec_config \
