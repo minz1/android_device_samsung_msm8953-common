@@ -230,6 +230,10 @@ etc/permissions/vsimservice_library.xml
 framework/secimshttpclient.jar
 framework/imsmanager.jar
 lib64/libsec-ims.so
+lib64/libaresdns.so
+lib64/libcpve-client.so
+lib64/libsveservice.so
+lib64/libSamsungAPVoiceEngine.so
 vendor/lib/lib-ims-rcscmjni.so
 vendor/lib/lib-imsrcs.so
 vendor/lib/lib-imsrcscm.so
