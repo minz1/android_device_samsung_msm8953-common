@@ -286,3 +286,10 @@
 
 # Fingerprint Sensor
 /dev/esfp0        0660   system     system
+
+# Sensorhub IIO
+/dev/ssp_sensorhub        0660   system		system
+/dev/iio:device*          0660   system		system
+/sys/devices/soc/7af5000.spi/spi_master/spi5/spi5.0/iio:device*    buffer/enable       0660    system    system
+/sys/devices/soc/7af5000.spi/spi_master/spi5/spi5.0/iio:device*    buffer/length       0660    system    system
+/sys/bus/iio/devices/iio:device*    0664   system     radio
