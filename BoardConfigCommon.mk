@@ -15,6 +15,10 @@
 
 COMMON_PATH := device/samsung/msm8953-common
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_msm8953
+TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
+
 # Include board config fragments
 include $(COMMON_PATH)/PlatformConfig.mk
 include $(COMMON_PATH)/board/*.mk
