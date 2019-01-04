@@ -23,7 +23,7 @@ COMMON_PATH := $(call my-dir)
 
 ifeq ($(BOARD_VENDOR),samsung)
 ifeq ($(TARGET_BOARD_PLATFORM),msm8953)
-include $(call all-makefiles-under,$(COMMON_PATH))
+include $(call first-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
 
