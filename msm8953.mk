@@ -282,7 +282,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libQWiFiSoftApCfg \
     libqsap_sdk \
-    libwcnss_qmi \
     libwifi-hal-qcom \
     dhcpcd.conf \
     macloader \
